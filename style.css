@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'BonVivant';
+    src: url('./fonts/BonVivantSerif.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'BonVivant';
+    src: url('./fonts/BonVivantSerifBold.ttf');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    font-family: 'BonVivant';
+    font-size: 5em;
+    color:#2A2B2F;
+}
+
+.link {
+    text-decoration: none;
+    color: #2A2B2F;
+}
+
+/* main styles */
+
+header {
+    max-height: 3em;
+    padding: .5em 0;
+    background-color: #2A2B2F;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu,
+.logo {
+    height: 2.5em;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card__item {
+    border: 1px solid #2A2B2F;
+    border-radius: .3em;
+    padding: 3em 2em;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    z-index: 2;
+
+    background: #2A2B2F;
+    color: white;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.burger--active {
+    display: block;
+}
+
+.burger h1 {
+    color: white;
+}
+
+.burger a {
+    text-decoration: none;
+}
+
+.mockup {
+    max-width: 100%;
+    margin-bottom: 50vh;
+}
